@@ -1,10 +1,14 @@
+/* common */
+/* small screen */
+
 .main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
+    font-size: 10px;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 210%;
     border-bottom: 1px solid;
     padding: 16px 16px;
     /* margin-top: 25px; */
@@ -27,7 +31,7 @@ dl > div {
 
 dt {
     padding: 30px;
-    font-size: 18px;
+    font-size: 130%;
     font-weight: 300;
     cursor: pointer;
     user-select: none;
@@ -58,6 +62,7 @@ h3 {
 dd {
     padding: 5px;
     margin-left: 20px;
+    font-size: 140%;
     /* margin: 0; */
     /* display: none; */
 }
@@ -68,6 +73,7 @@ dd::before {
 }
 
 p {
+    font-size: 120%;
     margin-left: 20px;
     padding-left: 15px;
 }
@@ -81,5 +87,31 @@ p {
 
 dl > div.appear .menu_detail {
     display: block;
+}
+
+/* large screen */
+@media (min-width: 800px) {
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+dd {
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 120%;
+    /* margin: 0; */
+    /* display: none; */
+}
+
+p {
+    font-size: 100%;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+        
 }
 
