@@ -11,7 +11,6 @@ h1 {
     font-size: 210%;
     border-bottom: 1px solid;
     padding: 16px 16px;
-    /* margin-top: 25px; */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -35,7 +34,7 @@ dt {
     font-size: 130%;
     font-weight: 300;
     cursor: pointer;
-    user-select: none;
+    /* user-select: none; */
     position: relative;
 }
 
@@ -58,8 +57,17 @@ dl > div.appear dt::after {
     transform: rotate(45deg);
 }
 
-.menu_description {
+dl > div.appear .menu_detail {
+    display: block;
+}
+
+/* .menu_description {
     display: none;
+    overflow: hidden; 
+ } */
+
+dd > div.appear .menu_description { 
+    display: block;
 }
 
 h3 {
@@ -71,13 +79,12 @@ dd {
     padding: 5px;
     margin-left: 20px;
     font-size: 140%;
-    /* margin: 0; */
-    /* display: none; */
+    cursor: pointer;
+    /* user-select: none; */
 }
 
 dd::before {
     margin-left: 20px;
-    /* content: '・ '; */
 }
 
 p {
@@ -86,9 +93,7 @@ p {
     padding-left: 15px;
 }
 
-/* dl > div.appear .dd {
-    display: block;
-} */
+
 
 /* large screen */
 @media (min-width: 800px) {
@@ -103,10 +108,6 @@ dd {
     padding: 5px;
     margin-left: 20px;
     font-size: 120%;
-}
-
-dl > div.appear .menu_detail {
-    display: block;
 }
 
 /* div.appear .menu_description {
